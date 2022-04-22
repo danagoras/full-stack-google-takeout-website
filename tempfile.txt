@@ -1,0 +1,162 @@
+test user: test test@gmail.com Test123$
+
+html for modals in User:
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Signup</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="includes/login.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/Avatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" onclick="alert('TBA')">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      
+    </div>
+  </form>
+</div>
+
+<div id="id02" class="modal">
+  
+  <form class="modal-content animate" action="includes/signup.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/Register.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" id="username" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter your Email Address" name="email" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+
+    <button type="submit" name="signup-submit" class="signupbtn">Signup</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<script src="javascripts/user_script.js"></script>
+
+----------------------------------------------------
+html for buttons on Homepage:
+
+	<button class="btnUser" onclick="location.href='User.php'">Continue as User</button>
+	<button class="btnAdmin" onclick="location.href='Admin.php'">Continue as Admin</button>
+
+
+CANVAS:
+chartIt();
+const xlabels = [];
+
+function chartIt()
+{
+await getData();
+const ctx = document.getElementById('chart').getContext('2d');
+ctx.canvas.width  = window.innerWidth;
+ctx.canvas.height = window.innerHeight/2;
+const chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+	
+    // The data for our dataset
+    data: {
+        labels: xlabels,
+        datasets: [{
+            label: 'Ecological Mobility Score',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: dataPoints
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+}
+// Get the desired data from the database
+async function getData()
+{
+    const response = await fetch('js/user_test.json');
+    const data = await response.text();
+
+    const table = data.split('\n'.slice(1));
+}
+
+------------------------------------------------------
+while(($activity_time[$counter][0] > $cur_timestampMs + $hour) && ($cur_timestampMs <= $last_timestampMs)) // If the current row is at a later time
+				{
+					$cur_timestampMs = $cur_timestampMs + $hour; 
+					$hours++;
+					if($hours == 24)
+					{
+						$hours = 0;
+					}
+				}
+				if($activity_time[$counter][1] == $activities_array[$i]) // If the current row has the correct activity
+				{
+					$hourly_activity[$i][$hours]++;
+				}
+				if($cur_timestampMs > $last_timestampMs) // If we are later than the last timestamp given by the user 
+				{
+					break;
+				}
+
+
+------------------------------------------------------
+for($i=0;$i<7;$i++)
+		{
+			for($j=0;$j<24;$j++)
+			{
+				echo	$hourly_activity[$i][$j] . " ";
+			}
+			echo	'<br>';
+		}
+
+
+----------------------------------------------------------------------
+var xlabels = <?php echo $activities_array_json ?>;
+var ylabels = <?php echo $hour_index_json ?>;
+var rlabels = <?php echo $max_values_json ?>;
+
+------------------------------------------------------------------------
+<footer class="page-footer unique-color-dark pt-0">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center pt-0">©2020
+    <a href="Homepage.php">Project WEB</a>
+  </div>
+  <!-- Copyright -->
+<a href="Admin.php" class="btn btn-blue btn-lg btn-block">Login as Admin</a>
+</footer>

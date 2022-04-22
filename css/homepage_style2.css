@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+.header
+{
+    height: 100vh;
+}
+
+.data-info
+{
+    margin: 30px 0;
+}
+
+#logo {
+    vertical-align:middle;
+}
+.navbar-brand span {
+    font-size:2rem;
+    line-height:1.2;
+    font-weight: 200;
+    display:inline-block;
+    vertical-align:middle;
+    padding:0 0 0 15px;
+}
+
+.navbar-brand b {
+    display:block;
+    font-size:50%;
+    line-height:1;
+}
+
+.navbar-nav {
+    margin-left:auto;
+}
+
+#map {height: 500px;}

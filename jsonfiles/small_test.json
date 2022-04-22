@@ -1,0 +1,87 @@
+{
+  "locations" : [ {
+    "timestampMs" : "1406742526110",
+    "latitudeE7" : 385722811,
+    "longitudeE7" : 210936965,
+    "accuracy" : 22,
+    "activity" : [ {
+      "timestampMs" : "1406742783186",
+      "activity" : [ {
+        "type" : "RUNNING",
+        "confidence" : 100
+      } ]
+    } ]
+  }, {
+    "timestampMs" : "1406742779863",
+    "latitudeE7" : 385722825,
+    "longitudeE7" : 210936992,
+    "accuracy" : 14,
+    "activity" : [ {
+      "timestampMs" : "1406742783186",
+      "activity" : [ {
+        "type" : "STILL",
+        "confidence" : 100
+      } ]
+    } ]
+  }, {
+    "timestampMs" : "1406742915552",
+    "latitudeE7" : 385722790,
+    "longitudeE7" : 210936952,
+    "accuracy" : 31,
+    "activity" : [ {
+      "timestampMs" : "1406742783186",
+      "activity" : [ {
+        "type" : "IN_VEHICLE",
+        "confidence" : 100
+      } ]
+    } ]
+  }, {
+    "timestampMs" : "1406742975633",
+    "latitudeE7" : 385723001,
+    "longitudeE7" : 210937221,
+    "accuracy" : 27,
+    "activity" : [ {
+      "timestampMs" : "1406742783186",
+      "activity" : [ {
+        "type" : "STILL",
+        "confidence" : 100
+      } ]
+    } ]
+  }, {
+    "timestampMs" : "1406743035593",
+    "latitudeE7" : 385722912,
+    "longitudeE7" : 210937107,
+    "accuracy" : 31,
+    "activity" : [ {
+      "timestampMs" : "1406742783186",
+      "activity" : [ {
+        "type" : "ON_BICYCLE",
+        "confidence" : 100
+      } ]
+    } ]
+  }, {
+    "timestampMs" : "1406744309484",
+    "latitudeE7" : 385722912,
+    "longitudeE7" : 210937107,
+    "accuracy" : 31,
+    "activity" : [ {
+      "timestampMs" : "1406742783186",
+      "activity" : [ {
+        "type" : "ON_BICYCLE",
+        "confidence" : 100
+      } ]
+    } ]
+  }, {
+    "timestampMs" : "1406744429577",
+    "latitudeE7" : 385722800,
+    "longitudeE7" : 210936933,
+    "accuracy" : 31,
+    "activity" : [ {
+      "timestampMs" : "1406742783186",
+      "activity" : [ {
+        "type" : "ON_FOOT",
+        "confidence" : 100
+      } ]
+    } ]
+  }]
+}

@@ -1,0 +1,61 @@
+{"locations":[ {
+    "timestampMs" : "1599834633000",
+    "latitudeE7" : 382502775,
+    "longitudeE7" : 217381834,
+    "accuracy" : 16,
+    "altitude" : 49,
+    "verticalAccuracy" : 2,
+    "activity" : [ {
+      "timestampMs" : "1599834634000",
+      "activity" : [ {
+        "type" : "ON_FOOT",
+        "confidence" : 99
+      }, {
+        "type" : "WALKING",
+        "confidence" : 1
+      } ]
+    } ]
+  }, {
+    "timestampMs" : "1599834635000",
+    "latitudeE7" : 382502223,
+    "longitudeE7" : 217380987,
+    "accuracy" : 16,
+    "altitude" : 49,
+    "verticalAccuracy" : 2,
+    "activity" : [ {
+      "timestampMs" : "1599834636000",
+      "activity" : [ {
+        "type" : "IN_VEHICLE",
+        "confidence" : 100
+      } ]
+    } ]
+  },{
+    "timestampMs" : "1599834637000",
+    "latitudeE7" : 502502223,
+    "longitudeE7" : 257380987,
+    "accuracy" : 16,
+    "altitude" : 49,
+    "verticalAccuracy" : 2,
+    "activity" : [ {
+      "timestampMs" : "1599834638000",
+      "activity" : [ {
+        "type" : "IN_VEHICLE",
+        "confidence" : 100
+      } ]
+    } ]
+  },{
+    "timestampMs" : "1599834639000",
+    "latitudeE7" : 382602775,
+    "longitudeE7" : 217380987,
+    "accuracy" : 16,
+    "altitude" : 49,
+    "verticalAccuracy" : 2,
+    "activity" : [ {
+      "timestampMs" : "1599834640000",
+      "activity" : [ {
+        "type" : "IN_VEHICLE",
+        "confidence" : 100
+      } ]
+    } ]
+  }]
+}
